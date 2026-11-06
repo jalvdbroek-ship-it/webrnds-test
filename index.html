@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WeBrnds — maatwerksoftware voor het MKB</title>
+<meta name="description" content="WeBrnds bouwt websites, webapps, workflow-automatisering, API-koppelingen en AI-integraties voor het MKB. Vaste prijs vooraf, reactie binnen één werkdag, code van de klant.">
+<link rel="preload" href="assets/fonts/Geist-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/InstrumentSerif-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/template.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></symbol><symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /> <rect width="16" height="12" x="4" y="8" rx="2" /> <path d="M2 14h2" /> <path d="M20 14h2" /> <path d="M15 13v2" /> <path d="M9 13v2" /></symbol><symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" /> <path d="m3.3 7 8.7 5 8.7-5" /> <path d="M12 22V12" /></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-circle-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <path d="m9 12 2 2 4-4" /></symbol><symbol id="i-credit-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2" /> <line x1="2" x2="22" y1="10" y2="10" /></symbol><symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></symbol><symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></symbol><symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4" /> <path d="m21 2-9.6 9.6" /> <circle cx="7.5" cy="15.5" r="5.5" /></symbol><symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /> <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /> <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol><symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /></symbol><symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /></symbol><symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5" /> <path d="M9 8V2" /> <path d="M15 8V2" /> <path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" /></symbol><symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="M12 5v14" /></symbol><symbol id="i-rss" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9" /> <path d="M4 4a16 16 0 0 1 16 16" /> <circle cx="5" cy="19" r="1" /></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></symbol><symbol id="i-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol><symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /></symbol><symbol id="i-square-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" /> <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" /></symbol><symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol><symbol id="i-workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2" /> <path d="M7 11v4a2 2 0 0 0 2 2h4" /> <rect width="8" height="8" x="13" y="13" rx="2" /></symbol><symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol></svg>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="nav-left">
+      <a class="brand" href="#home" aria-label="WeBrnds home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26 16A10 10 0 1 1 21 7.34" fill="none" stroke="#6ee7c8" stroke-width="2.2" stroke-linecap="round"/><circle cx="24.66" cy="11" r="2.4" fill="#6ee7c8"/></svg>WeBrnds</a>
+      <nav class="nav-links" aria-label="Hoofdmenu">
+        <a href="#home" data-nav="home">Diensten</a>
+        <a href="#pricing" data-nav="pricing">Prijzen</a>
+        <a href="#resources" data-nav="resources">Kennisbank</a>
+        <a href="#events" data-nav="events">Agenda</a>
+        <a href="#changelog" data-nav="changelog">Changelog</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a class="login" href="mailto:schreuderdarren@gmail.com">Contact</a>
+      <a class="btn btn-primary btn-sm" href="#pricing">Bekijk prijzen</a>
+      <button class="nav-burger" aria-label="Menu openen" aria-expanded="false"><svg class="i"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#home" data-nav="home">Diensten</a>
+  <a href="#pricing" data-nav="pricing">Prijzen</a>
+  <a href="#resources" data-nav="resources">Kennisbank</a>
+  <a href="#events" data-nav="events">Agenda</a>
+  <a href="#changelog" data-nav="changelog">Changelog</a>
+</div>
+
+<main>
+<section class="page p-home" data-page="home">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <a class="announce" href="#changelog"><span class="new">NIEUW</span>Negen klantsites in beheer en bouw<svg class="i"><use href="#i-arrow-right"/></svg></a>
+    <h1 class="hero-h"><span class="ln">Maatwerksoftware voor</span> <span class="ln">het <span class="serif">MKB</span>.</span></h1>
+    <p class="hero-lede">Websites, webapps, workflow-automatisering, API-koppelingen en AI-integraties. Eén prijs die je vooraf kent, en code die van jou blijft.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#pricing"><svg class="i"><use href="#i-file-text"/></svg>Bekijk de prijzen</a>
+      <a class="btn btn-ghost" href="mailto:schreuderdarren@gmail.com?subject=Kennismaking">Plan een gesprek<svg class="i"><use href="#i-arrow-right"/></svg></a>
+    </div>
+    <div class="trust">
+      <span>Rozenburg, Zwartewaal en Stellendam · reactie binnen één werkdag</span>
+    </div>
+
+    <div class="shot">
+      <div class="win" role="group" aria-label="Voorbeeld van het WeBrnds-proces">
+        <aside class="side">
+          <div class="lights" aria-hidden="true"><i></i><i></i><i></i></div>
+          <button class="s-item" data-toast="Diensten: websites, webapps, automatisering, API-koppelingen, AI en beeldmerk"><svg class="i"><use href="#i-layers"/></svg>Diensten</button>
+          <button class="s-item" data-toast="Een prijsindicatie binnen één werkdag"><svg class="i"><use href="#i-file-text"/></svg>Offerte</button>
+          <button class="s-item" data-toast="Eén engineer, maximaal tien klanten tegelijk"><svg class="i"><use href="#i-users"/></svg>Team</button>
+          <button class="s-item" data-toast="Werkwijze: vraag, gesprek, vaste prijs, bouwen per stap"><svg class="i"><use href="#i-workflow"/></svg>Werkwijze</button>
+          <div class="s-label">WERKWIJZE</div>
+          <div class="tasks" role="tablist" aria-label="Stappen">
+            <button class="s-item task on" role="tab" aria-selected="true" data-r="0"><span class="dot"></span>01 Vraag</button>
+            <button class="s-item task" role="tab" aria-selected="false" data-r="1"><span class="dot"></span>02 Gesprek</button>
+            <button class="s-item task" role="tab" aria-selected="false" data-r="2"><span class="dot"></span>03 Vaste prijs</button>
+            <button class="s-item task" role="tab" aria-selected="false" data-r="3"><span class="dot"></span>04 Bouwen</button>
+          </div>
+          <div class="side-user"><span class="mono">WeBrnds</span> · Rozenburg</div>
+        </aside>
+        <div class="main">
+          <div class="topbar"><span class="swap" data-k="title">01 · Vraag</span><span class="status-pill" data-k="status">Stap 1 van 4</span></div>
+          <div class="perf-h swap" data-k="heading">Vertel wat er moet gebeuren</div>
+          <div class="kpis" data-k="tiles"></div>
+          <div class="steps" aria-hidden="true">
+            <span>VRAAG</span><span>GESPREK</span><span>VASTE PRIJS</span><span>BOUWEN</span>
+          </div>
+          <div class="finding"><span class="k">WAT WE DOEN</span><p class="swap" data-k="finding">Je hoeft geen plan mee te brengen. Eén vraag is genoeg om te beginnen.</p></div>
+        </div>
+      </div>
+      <div class="shot-fade" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- KLANTEN -->
+  <div class="logos reveal">
+    <span class="logos-label">SITES IN BEHEER EN BOUW</span>
+    <div class="logos-row">
+      <span class="logo">Beijer Elektro</span>
+      <span class="logo">Lil&rsquo;s haarsalon</span>
+      <span class="logo">Restaurant La Caleta</span>
+      <span class="logo">Hotel Rozenburg</span>
+      <span class="logo">De Gouden Kurk</span>
+      <span class="logo">Cafetaria De Zon</span>
+      <span class="logo">Body Action XL</span>
+    </div>
+  </div>
+
+  <!-- DIENSTEN -->
+  <div class="hsec">
+    <div class="wrap">
+      <div class="shead reveal">
+        <div>
+          <p class="eyebrow">01 — DIENSTEN</p>
+          <h2 class="h2x">Wat wij voor het MKB <span class="serif">bouwen</span>.</h2>
+        </div>
+        <p>Van een website die je zelf beheert tot een systeem waar processen vanzelf doorlopen. Altijd met een vaste prijs eronder.</p>
+      </div>
+      <div class="fgrid reveal">
+        <article class="bx feat"><div class="feat-top"><span class="ficon"><svg class="i"><use href="#i-globe"/></svg></span><span>01</span></div><h3>Websites en webapps</h3><p>Een website vanaf € 2.500, een webapp vanaf € 5.000. Je krijgt een beheeromgeving en de broncode in je eigen repository.</p></article>
+        <article class="bx feat"><div class="feat-top"><span class="ficon"><svg class="i"><use href="#i-workflow"/></svg></span><span>02</span></div><h3>Automatisering en koppelingen</h3><p>Workflows vanaf € 5.000 en API-koppelingen vanaf € 2.000. Systemen praten met elkaar, zonder handmatig overtypen.</p></article>
+        <article class="bx feat"><div class="feat-top"><span class="ficon"><svg class="i"><use href="#i-sparkles"/></svg></span><span>03</span></div><h3>AI en beeldmerk</h3><p>AI-integraties die in je proces passen, plus beeldmerk en huisstijl. Een platform vanaf € 10.000.</p></article>
+      </div>
+    </div>
+  </div>
+
+  <!-- WAAROM -->
+  <div class="hsec">
+    <div class="wrap">
+      <div class="shead reveal">
+        <div>
+          <p class="eyebrow">02 — WAAROM WEBRNDS</p>
+          <h2 class="h2x">Eén engineer, tien klanten <span class="serif">tegelijk</span>.</h2>
+        </div>
+        <p>Geen tussenpersonen en geen urenregistratie. Je werkt rechtstreeks met degene die het bouwt.</p>
+      </div>
+      <div class="bento reveal">
+        <div class="brow">
+          <div class="bx team">
+            <div class="team-copy">
+              <span class="kick">WERKGEBIED</span>
+              <h3>Jouw vraag, of je proces. Wij vertalen het naar software.</h3>
+              <p>Van een eerste schets tot een systeem dat dagelijks draait. Je ziet elke stap voor je hem vrijgeeft.</p>
+              <div class="roles">
+                <button class="role on" data-role="Website|Webapp">Website</button>
+                <button class="role" data-role="Workflow|Automatisering">Workflow</button>
+                <button class="role" data-role="API|Koppelingen">API</button>
+                <button class="role" data-role="AI|Integraties">AI</button>
+                <button class="role" data-role="Huisstijl|Beeldmerk">Huisstijl</button>
+              </div>
+            </div>
+            <div class="badge-wrap">
+              <div class="badge">
+                <div class="badge-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26 16A10 10 0 1 1 21 7.34" fill="none" stroke="#0b1110" stroke-width="2.2" stroke-linecap="round"/><circle cx="24.66" cy="11" r="2.4" fill="#0b1110"/></svg></div>
+                <div class="badge-info"><span class="n">WeBrnds</span><span class="t"><em class="role-a">Website</em> <span class="role-b">Webapp</span></span><span class="id">ROZENBURG · ZUID-HOLLAND</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="bx tools">
+            <span class="kick">WAAR WIJ MEE WERKEN</span>
+            <h3>Jouw bestaande systemen, erin.</h3>
+            <div class="tiles">
+              <button class="tile" aria-label="Workflows" data-toast="Workflow-automatisering vanaf € 5.000"><svg class="i"><use href="#i-workflow"/></svg></button>
+              <button class="tile" aria-label="API-koppelingen" data-toast="API-koppelingen vanaf € 2.000"><svg class="i"><use href="#i-plug"/></svg></button>
+              <button class="tile" aria-label="AI-integraties" data-toast="AI-integraties: op aanvraag, gekoppeld aan je proces"><svg class="i"><use href="#i-bot"/></svg></button>
+              <button class="tile" aria-label="Webapps" data-toast="Webapps vanaf € 5.000"><svg class="i"><use href="#i-box"/></svg></button>
+              <button class="tile" aria-label="Beheeromgeving" data-toast="Een beheeromgeving zodat je zelf kunt bijhouden"><svg class="i"><use href="#i-layers"/></svg></button>
+              <button class="tile" aria-label="Broncode in eigen repository" data-toast="De broncode staat in je eigen repository"><svg class="i"><use href="#i-key"/></svg></button>
+              <button class="tile" aria-label="Beveiliging" data-toast="Domein, hosting en certificaten geregeld"><svg class="i"><use href="#i-shield-check"/></svg></button>
+              <button class="tile" aria-label="E-mail en meldingen" data-toast="Meldingen en rapportage op maat"><svg class="i"><use href="#i-mail"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="brow brow-3">
+          <div class="bx">
+            <span class="kick">VASTE PRIJS</span>
+            <h3>Je weet vooraf wat het kost.</h3>
+            <div class="models" role="group" aria-label="Voorlopige prijzen">
+              <button class="model" aria-pressed="true">Website vanaf € 2.500</button>
+              <button class="model" aria-pressed="false">Webapp vanaf € 5.000</button>
+              <button class="model" aria-pressed="false">Koppeling vanaf € 2.000</button>
+              <button class="model" aria-pressed="false">Workflow vanaf € 5.000</button>
+              <button class="model" aria-pressed="false">Platform vanaf € 10.000</button>
+              <button class="model" aria-pressed="false">Onderhoud € 175 p.m.</button>
+            </div>
+          </div>
+          <div class="bx">
+            <span class="kick">CODE VAN DE KLANT</span>
+            <h3>De broncode is van jou.</h3>
+            <div class="approval">
+              <svg class="i"><use href="#i-shield-check"/></svg>
+              <span class="approval-q">Broncode overdragen aan de klant?</span>
+              <button class="approve"><svg class="i"><use href="#i-check"/></svg><span class="approve-t">Akkoord</span></button>
+            </div>
+          </div>
+          <div class="bx sched">
+            <span class="kick">ONDERHOUD</span>
+            <h3>Na livegang blijft er iemand bereikbaar.</h3>
+            <div class="run"><span class="tm">dagelijks</span><span class="dot"></span><span class="nm">Back-up en controle</span></div>
+            <div class="run"><span class="tm">wekelijks</span><span class="dot"></span><span class="nm">Updates en beveiliging</span></div>
+            <div class="run"><span class="tm">maandelijks</span><span class="dot"></span><span class="nm">Vragen en kleine wijzigingen</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BELOFTE -->
+  <div class="testi">
+    <div class="wrap" style="display:flex;flex-direction:column;align-items:center;gap:36px">
+      <div class="qmark reveal" aria-hidden="true">&ldquo;</div>
+      <blockquote class="quote reveal">Geen urenregistratie en geen verrassingen achteraf. Je weet vooraf <span class="serif">wat het kost</span>, en de code blijft van jou.</blockquote>
+      <div class="author reveal"><div><b>WeBrnds</b><small>Maatwerksoftware voor het MKB · Rozenburg</small></div></div>
+      <div class="proof reveal">
+        <div><b data-count="1">1</b><span>engineer</span></div>
+        <div><b data-count="10">10</b><span>klanten tegelijk</span></div>
+        <div><b data-count="1">1</b><span>werkdag reactie</span></div>
+        <div><b data-count="9">9</b><span>klantsites</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-sec">
+    <div class="wrap">
+      <div class="cta-card reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <p class="eyebrow">BEGIN MET EEN GESPREK</p>
+        <h2 class="cta-h">Een idee? <span class="serif">Een prijs</span>.</h2>
+        <p>Dertig minuten, daarna weet je wat het kost. Vast, vooraf, zonder verrassingen.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="mailto:schreuderdarren@gmail.com?subject=Kennismaking"><svg class="i"><use href="#i-mail"/></svg>Plan een gesprek</a>
+          <a class="btn btn-ghost" href="#pricing">Bekijk de prijzen<svg class="i"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page p-pricing" data-page="pricing">
+  <div class="page-hero pr-hero">
+    <p class="eyebrow">Prijzen</p>
+    <h1 class="h1">Een vaste prijs, vooraf <span class="serif">afgesproken</span>.</h1>
+    <p class="lede">Geen abonnement dat je op je eftrekken zet. Wat wij bouwen, heeft een prijs die je vooraf kent.</p>
+    <div class="pr-toggle" role="group" aria-label="Betalingsvorm">
+      <span class="pr-pill" aria-hidden="true"></span>
+      <button type="button" data-cycle="monthly" aria-pressed="true">Alleen bouwen</button>
+      <button type="button" data-cycle="yearly" aria-pressed="false">Ook 12 maanden onderhoud <span class="save">12 mnd</span></button>
+    </div>
+  </div>
+
+  <div class="pr-plans reveal">
+    <div class="wrap">
+      <div class="pr-grid">
+        <article class="plan">
+          <div class="plan-head"><h3 class="plan-name">Website</h3></div>
+          <p class="plan-desc">Een site die je zelf kunt beheren.</p>
+          <div class="price"><span class="cur">&euro;</span><span class="amt" data-m="2500" data-y="4600">2.500</span><span class="per" data-m="vanaf" data-y="totaal">vanaf</span></div>
+          <p class="bill" data-m="Vast bedrag, eenmalig" data-y="waarvan 2.100 onderhoud">Vast bedrag, eenmalig</p>
+          <a class="btn btn-ghost" href="mailto:schreuderdarren@gmail.com?subject=Offerte%20website">Vraag een offerte<svg class="i"><use href="#i-arrow-right"/></svg></a>
+          <hr>
+          <p class="inc">Inbegrepen</p>
+          <ul class="feats">
+            <li><svg class="i"><use href="#i-check"/></svg>Intake en structuur in jouw taal</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Vormgeving op basis van je huisstijl</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Beheeromgeving die je zelf kunt gebruiken</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Domein, hosting en certificaten geregeld</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Broncode in je eigen repository</li>
+          </ul>
+        </article>
+        <article class="plan pro">
+          <div class="plan-head"><h3 class="plan-name">Webapp</h3><span class="popular">VASTE PRIJS</span></div>
+          <p class="plan-desc">Een portaal of applicatie voor je proces.</p>
+          <div class="price"><span class="cur">&euro;</span><span class="amt" data-m="5000" data-y="7100">5.000</span><span class="per" data-m="vanaf" data-y="totaal">vanaf</span></div>
+          <p class="bill" data-m="Vast bedrag, eenmalig" data-y="waarvan 2.100 onderhoud">Vast bedrag, eenmalig</p>
+          <a class="btn btn-primary" href="mailto:schreuderdarren@gmail.com?subject=Offerte%20webapp">Vraag een offerte</a>
+          <hr>
+          <p class="inc">Alles van de website, plus</p>
+          <ul class="feats">
+            <li><svg class="i"><use href="#i-check"/></svg>Accounts, rollen en eigen gegevens</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Koppeling met je bestaande systemen</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Uitbreidbaar in stappen</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Broncode in je eigen repository</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Reactie binnen één werkdag</li>
+          </ul>
+        </article>
+        <article class="plan">
+          <div class="plan-head"><h3 class="plan-name">Platform</h3></div>
+          <p class="plan-desc">Automatisering, AI en koppelingen in één systeem.</p>
+          <div class="price"><span class="cur">&euro;</span><span class="amt" data-m="10000" data-y="12100">10.000</span><span class="per" data-m="vanaf" data-y="totaal">vanaf</span></div>
+          <p class="bill" data-m="Vast bedrag, eenmalig" data-y="waarvan 2.100 onderhoud">Vast bedrag, eenmalig</p>
+          <a class="btn btn-ghost" href="mailto:schreuderdarren@gmail.com?subject=Offerte%20platform">Vraag een offerte<svg class="i"><use href="#i-arrow-right"/></svg></a>
+          <hr>
+          <p class="inc">Alles van de webapp, plus</p>
+          <ul class="feats">
+            <li><svg class="i"><use href="#i-check"/></svg>Workflow-automatisering end-to-end</li>
+            <li><svg class="i"><use href="#i-check"/></svg>API-koppelingen met meerdere systemen</li>
+            <li><svg class="i"><use href="#i-check"/></svg>AI-integratie in je dagelijks werk</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Beeldmerk en huisstijl als geheel</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Documentatie en overdracht</li>
+          </ul>
+        </article>
+      </div>
+      <div class="trust">
+        <span>Prijsindicatie binnen één werkdag · KvK 42127859 · Broncode blijft van de klant</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pr-compare">
+    <div class="wrap reveal">
+      <h2 class="h2">Vergelijk de <span class="serif">pakketten</span></h2>
+      <div class="tbl-scroll" tabindex="0" aria-label="Vergelijkingstabel, horizontaal scrollbaar op kleine schermen">
+        <table class="tbl">
+          <thead><tr><th scope="col"></th><th scope="col">Website</th><th scope="col" class="pro">Webapp</th><th scope="col">Platform</th></tr></thead>
+          <tbody>
+            <tr><td>Startprijs</td><td>2.500</td><td class="pro">5.000</td><td>10.000</td></tr>
+            <tr><td>Vaste prijs vooraf</td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td class="pro"><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td></tr>
+            <tr><td>Reactie binnen één werkdag</td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td class="pro"><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td></tr>
+            <tr><td>Broncode in eigen repository</td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td class="pro"><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td></tr>
+            <tr><td>Beheer door de klant</td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td class="pro"><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td></tr>
+            <tr><td>Workflow-automatisering</td><td><span class="dash" aria-label="Niet inbegrepen">&mdash;</span></td><td class="pro"><span class="dash" aria-label="Niet inbegrepen">&mdash;</span></td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td></tr>
+            <tr><td>AI-integratie</td><td><span class="dash" aria-label="Niet inbegrepen">&mdash;</span></td><td class="pro">optioneel</td><td><svg class="i" aria-label="Inbegrepen"><use href="#i-check"/></svg></td></tr>
+            <tr><td>Onderhoud per maand</td><td>175</td><td class="pro">175</td><td>175</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="pr-faq">
+    <div class="wrap reveal">
+      <h2 class="h2">Afspraken <span class="serif">en voorwaarden</span></h2>
+      <div class="faq">
+        <div class="qa open">
+          <button type="button" aria-expanded="true">Wat betekent een vaste prijs?<span class="ic"><svg class="i plus"><use href="#i-plus"/></svg><svg class="i minus"><use href="#i-minus"/></svg></span></button>
+          <div class="ans"><p>Je krijgt vooraf één bedrag voor de afgesproken omvang. Verandert je vraag tijdens het project, dan maken we daar apart een afspraak over. Zo blijft de prijs van je oorspronkelijke opdracht gelijk.</p></div>
+        </div>
+        <div class="qa">
+          <button type="button" aria-expanded="false">Van wie is de code?<span class="ic"><svg class="i plus"><use href="#i-plus"/></svg><svg class="i minus"><use href="#i-minus"/></svg></span></button>
+          <div class="ans"><p>Van jou. Bij oplevering staat de broncode in een repository die je zelf beheert, inclusief een korte uitleg van de opzet. Je bent daarmee niet afhankelijk van ons.</p></div>
+        </div>
+        <div class="qa">
+          <button type="button" aria-expanded="false">Hoe snel kunnen we starten?<span class="ic"><svg class="i plus"><use href="#i-plus"/></svg><svg class="i minus"><use href="#i-minus"/></svg></span></button>
+          <div class="ans"><p>Je hoort binnen één werkdag van ons. De startdatum hangt af van de agenda: er werkt één engineer aan, met maximaal tien klanten tegelijk. We plannen de stappen zo dat je per stap kunt bijsturen.</p></div>
+        </div>
+        <div class="qa">
+          <button type="button" aria-expanded="false">Wat kost onderhoud?<span class="ic"><svg class="i plus"><use href="#i-plus"/></svg><svg class="i minus"><use href="#i-minus"/></svg></span></button>
+          <div class="ans"><p>175 euro per maand. Daarmee houden we je site of app actueel, beantwoorden we vragen en voeren we kleine wijzigingen uit. Wil je alleen de bouw, dan is dat ook prima: het onderhoud is los te nemen.</p></div>
+        </div>
+        <div class="qa">
+          <button type="button" aria-expanded="false">Gebruiken jullie mijn bestaande systemen?<span class="ic"><svg class="i plus"><use href="#i-plus"/></svg><svg class="i minus"><use href="#i-minus"/></svg></span></button>
+          <div class="ans"><p>Daar is de hele automatisering op gericht. We koppelen je bestaande programma&rsquo;s met API&rsquo;s, zodat gegevens niet meer met de hand worden overgetypt. Eerst kijken we welke systemen je al gebruikt.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page p-resources" data-page="resources">
+  <div class="rs-hero">
+    <p class="eyebrow">Kennisbank</p>
+    <h1 class="rs-title">Hoe kunnen we <span class="serif">helpen</span>?</h1>
+    <p class="rs-lede">Uitleg over websites, webapps, automatisering en AI — voor ondernemers die niet weten waar ze moeten beginnen.</p>
+    <label class="rs-search" aria-label="Zoek in de kennisbank">
+      <svg class="i"><use href="#i-search"/></svg>
+      <input type="search" class="rs-input" placeholder="Zoek bijvoorbeeld &ldquo;offerte&rdquo; of &ldquo;koppeling&rdquo;" autocomplete="off" spellcheck="false">
+      <button type="button" class="rs-clear" aria-label="Zoekopdracht wissen"><svg class="i"><use href="#i-x"/></svg></button>
+      <span class="rs-kbd" aria-hidden="true">Ctrl K</span>
+    </label>
+    <div class="rs-pop">
+      <span>Vaak gezocht:</span>
+      <button type="button" class="rs-chip">Offerte</button>
+      <button type="button" class="rs-chip">Koppeling</button>
+      <button type="button" class="rs-chip">Broncode</button>
+      <button type="button" class="rs-chip">Onderhoud</button>
+    </div>
+  </div>
+
+  <div class="rs-cats">
+    <div class="wrap">
+      <div class="rs-grid reveal">
+        <button type="button" class="rs-cat" data-k="website webapp beheer mobiel domein hosting">
+          <span class="rs-ico"><svg class="i"><use href="#i-globe"/></svg></span>
+          <h3>Websites en webapps</h3>
+          <p>Wat een website kost, wat een webapp oplevert en wanneer je de ene moet kiezen.</p>
+          <span class="rs-count">Bekijk <svg class="i"><use href="#i-arrow-right"/></svg></span>
+        </button>
+        <button type="button" class="rs-cat" data-k="workflow automatisering proces overtypen handmatig">
+          <span class="rs-ico"><svg class="i"><use href="#i-workflow"/></svg></span>
+          <h3>Automatisering</h3>
+          <p>Processen die nu met de hand doorlopen, en wat je daarvan kunt weglaten.</p>
+          <span class="rs-count">Bekijk <svg class="i"><use href="#i-arrow-right"/></svg></span>
+        </button>
+        <button type="button" class="rs-cat" data-k="api koppeling integratie boekhouding voorraad">
+          <span class="rs-ico"><svg class="i"><use href="#i-plug"/></svg></span>
+          <h3>API-koppelingen</h3>
+          <p>Je systemen met elkaar laten praten, zonder handmatig overtypen.</p>
+          <span class="rs-count">Bekijk <svg class="i"><use href="#i-arrow-right"/></svg></span>
+        </button>
+        <button type="button" class="rs-cat" data-k="ai integratie assistent automatisch model">
+          <span class="rs-ico"><svg class="i"><use href="#i-bot"/></svg></span>
+          <h3>AI-integraties</h3>
+          <p>Waar AI in je dagelijks werk echt tijd bespaart, en waar niet.</p>
+          <span class="rs-count">Bekijk <svg class="i"><use href="#i-arrow-right"/></svg></span>
+        </button>
+        <button type="button" class="rs-cat" data-k="beeldmerk huisstijl logo kleuren typografie merk">
+          <span class="rs-ico"><svg class="i"><use href="#i-square-pen"/></svg></span>
+          <h3>Beeldmerk en huisstijl</h3>
+          <p>Je uiterlijk, je kleuren en je typografie op één plek, consistent.</p>
+          <span class="rs-count">Bekijk <svg class="i"><use href="#i-arrow-right"/></svg></span>
+        </button>
+        <button type="button" class="rs-cat" data-k="offerte prijs vaste prijs onderhoud factuur contract">
+          <span class="rs-ico"><svg class="i"><use href="#i-credit-card"/></svg></span>
+          <h3>Offerte en onderhoud</h3>
+          <p>Wat een vaste prijs inhoudt en wat er na oplevering gebeurt.</p>
+          <span class="rs-count">Bekijk <svg class="i"><use href="#i-arrow-right"/></svg></span>
+        </button>
+      </div>
+      <div class="rs-empty rs-empty-cats"><svg class="i"><use href="#i-search"/></svg><div>Geen onderwerpen gevonden voor <b class="rs-q"></b></div></div>
+    </div>
+  </div>
+
+  <div class="rs-at">
+    <div class="wrap">
+      <div class="rs-cols">
+        <div class="rs-arts reveal">
+          <p class="rs-k">MEEST GELEZEN</p>
+          <h2 class="rs-h2">Populaire <span class="serif">onderwerpen</span></h2>
+          <ul class="rs-list">
+            <li><button type="button" class="rs-art" data-k="offerte prijs vast begin offerte"><span class="n">01</span><span class="t">Hoe een offerte bij WeBrnds eruitziet</span><svg class="i"><use href="#i-arrow-up-right"/></svg></button></li>
+            <li><button type="button" class="rs-art" data-k="website mobiel snelheid beheer content"><span class="n">02</span><span class="t">Wat je van een goede website verwacht</span><svg class="i"><use href="#i-arrow-up-right"/></svg></button></li>
+            <li><button type="button" class="rs-art" data-k="webapp portaal accounts portal klanten"><span class="n">03</span><span class="t">Wanneer is een webapp slimmer dan een website</span><svg class="i"><use href="#i-arrow-up-right"/></svg></button></li>
+            <li><button type="button" class="rs-art" data-k="workflow automatisering overtypen besparen proces"><span class="n">04</span><span class="t">Drie processen die je meteen kunt automatiseren</span><svg class="i"><use href="#i-arrow-up-right"/></svg></button></li>
+            <li><button type="button" class="rs-art" data-k="api koppeling boekhouding voorraad factuur"><span class="n">05</span><span class="t">Je boekhouding en webshop laten praten</span><svg class="i"><use href="#i-arrow-up-right"/></svg></button></li>
+            <li><button type="button" class="rs-art" data-k="broncode repository eigendom code overdracht"><span class="n">06</span><span class="t">Waarom je de broncode zelf krijgt</span><svg class="i"><use href="#i-arrow-up-right"/></svg></button></li>
+          </ul>
+          <div class="rs-empty rs-empty-arts"><svg class="i"><use href="#i-search"/></svg><div>Niets gevonden voor <b class="rs-q"></b>. Probeer &ldquo;offerte&rdquo; of &ldquo;koppeling&rdquo;.</div></div>
+        </div>
+        <div class="rs-tuts reveal">
+          <p class="rs-k">GESTUURD</p>
+          <h2 class="rs-h2">Stap voor stap</h2>
+          <div class="rs-tlist">
+            <button type="button" class="rs-tut" data-k="beginner start eerste opdracht intake gesprek">
+              <span class="rs-lvl b">BEGINNER</span>
+              <h4>Je eerste opdracht bij WeBrnds, stap voor stap</h4>
+              <span class="rs-meta"><span class="mono">12 min lezen</span></span>
+            </button>
+            <button type="button" class="rs-tut" data-k="intermediate koppeling api integratie techniek">
+              <span class="rs-lvl m">INTERMEDIATE</span>
+              <h4>Een API-koppeling voorbereiden, zonder code</h4>
+              <span class="rs-meta"><span class="mono">18 min lezen</span></span>
+            </button>
+            <button type="button" class="rs-tut" data-k="gevorderd platform ai workflow automatisering">
+              <span class="rs-lvl a">GEVORDERD</span>
+              <h4>Van losse koppeling naar één platform</h4>
+              <span class="rs-meta"><span class="mono">25 min lezen</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rs-sup">
+    <div class="wrap">
+      <div class="rs-card reveal">
+        <div class="rs-team">
+          <span class="avatar initial" aria-hidden="true">W</span>
+        </div>
+        <div class="rs-copy">
+          <h3>Liever even overleggen? <span class="serif">Gewoon vragen.</span></h3>
+          <p>Je krijgt binnen één werkdag antwoord van dezelfde persoon die het zou bouwen.</p>
+        </div>
+        <a class="btn btn-primary rs-contact" href="mailto:schreuderdarren@gmail.com?subject=Vraag">Stel je vraag<svg class="i"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page p-events" data-page="events">
+  <div class="page-hero ev-hero">
+    <p class="eyebrow">Agenda</p>
+    <h1 class="h1">Samen zitten, <span class="serif">eerlijk</span> over je vraag.</h1>
+    <p class="lede">Kennismaken, workshops en webinars voor ondernemers —<br> in het Nederlands, zonder verkooppraatje.</p>
+  </div>
+
+  <div class="ev-feat-sec">
+    <div class="wrap">
+      <article class="ev-feat reveal">
+        <div class="ev-details">
+          <div class="ev-live"><span class="ev-dot"></span>OPEN KENNISMAKING</div>
+          <h2 class="ev-ftitle">Van vraag naar <span class="serif">vaste prijs</span>, in dertig minuten</h2>
+          <p class="ev-when">vr 20 november 2026 · 19:00 · Online</p>
+          <p class="ev-desc">Je stelt je vraag, wij laten zien hoe de intake, de schets en de prijsafspraak eruitzien. Je hoort meteen of het past — ook als het antwoord nee is.</p>
+          <div class="ev-host">
+            <span class="avatar initial" aria-hidden="true">W</span>
+            <div><b>WeBrnds</b><small>Maatwerksoftware voor het MKB · Rozenburg</small></div>
+          </div>
+          <div class="ev-actions">
+            <button class="btn btn-primary ev-save" type="button"><span>Reserveer je plek</span><svg class="i"><use href="#i-arrow-right"/></svg></button>
+            <div class="ev-reg">
+              <span>Reactie binnen één werkdag · <b class="ev-regn">gratis</b></span>
+            </div>
+          </div>
+        </div>
+        <div class="ev-side">
+          <div class="ev-count" aria-label="Tijd tot de sessie begint">
+            <div class="ev-unit"><b data-u="d">00</b><span>DAGEN</span></div>
+            <div class="ev-unit"><b data-u="h">00</b><span>UREN</span></div>
+            <div class="ev-unit"><b data-u="m">00</b><span>MIN</span></div>
+            <div class="ev-unit"><b data-u="s">00</b><span>SEC</span></div>
+          </div>
+          <ol class="ev-agenda">
+            <li><em>01</em>Jouw vraag in twee zinnen</li>
+            <li><em>02</em>Hoe een offerte bij ons ontstaat</li>
+            <li><em>03</em>Wat je van de bouw kunt verwachten</li>
+            <li><em>04</em>Vragen, zonder verkoopdruk</li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="ev-up sec-line">
+    <div class="wrap">
+      <div class="ev-up-head reveal">
+        <div>
+          <p class="eyebrow muted">AANKOMENDE SESSIES</p>
+          <h2 class="h2">Wat er <span class="serif">gepland</span> staat</h2>
+        </div>
+        <div class="ev-filters" role="tablist" aria-label="Filter sessies">
+          <button class="ev-pill on" data-f="all" role="tab" aria-selected="true">Alles</button>
+          <button class="ev-pill" data-f="kennismaking" role="tab" aria-selected="false">Kennismaking</button>
+          <button class="ev-pill" data-f="workshop" role="tab" aria-selected="false">Workshop</button>
+          <button class="ev-pill" data-f="webinar" role="tab" aria-selected="false">Webinar</button>
+          <button class="ev-pill" data-f="meetup" role="tab" aria-selected="false">Meetup</button>
+        </div>
+      </div>
+      <div class="ev-list reveal">
+        <div class="ev-row" data-type="webinar">
+          <div class="ev-date"><b>13</b><span>NOV</span></div>
+          <div class="ev-info"><span class="ev-tag webinar">WEBINAR</span><h3>Je website laten aansluiten op je boekhouding</h3><p>19:00 · Online</p></div>
+          <span class="avatar initial" aria-hidden="true">W</span>
+          <button class="btn btn-ghost ev-regbtn" type="button"><span class="lbl">Aanmelden</span><svg class="i go"><use href="#i-arrow-right"/></svg><svg class="i ok"><use href="#i-check"/></svg></button>
+        </div>
+        <div class="ev-row" data-type="kennismaking">
+          <div class="ev-date"><b>17</b><span>NOV</span></div>
+          <div class="ev-info"><span class="ev-tag challenge">KENNISMAKING</span><h3>Open kennismaking: is een webapp iets voor jou?</h3><p>13:00 · Rozenburg</p></div>
+          <span class="avatar initial" aria-hidden="true">W</span>
+          <button class="btn btn-ghost ev-regbtn" type="button"><span class="lbl">Aanmelden</span><svg class="i go"><use href="#i-arrow-right"/></svg><svg class="i ok"><use href="#i-check"/></svg></button>
+        </div>
+        <div class="ev-row" data-type="workshop">
+          <div class="ev-date"><b>24</b><span>NOV</span></div>
+          <div class="ev-info"><span class="ev-tag workshop">WORKSHOP</span><h3>Je eerste koppeling, stap voor stap opgebouwd</h3><p>19:00 · Online</p></div>
+          <span class="avatar initial" aria-hidden="true">W</span>
+          <button class="btn btn-ghost ev-regbtn" type="button"><span class="lbl">Aanmelden</span><svg class="i go"><use href="#i-arrow-right"/></svg><svg class="i ok"><use href="#i-check"/></svg></button>
+        </div>
+        <div class="ev-row" data-type="meetup">
+          <div class="ev-date"><b>28</b><span>NOV</span></div>
+          <div class="ev-info"><span class="ev-tag meetup">MEETUP</span><h3>Ondernemers in de buurt: drie live klanten</h3><p>14:00 · Zwartewaal</p></div>
+          <span class="avatar initial" aria-hidden="true">W</span>
+          <button class="btn btn-ghost ev-regbtn" type="button"><span class="lbl">Aanmelden</span><svg class="i go"><use href="#i-arrow-right"/></svg><svg class="i ok"><use href="#i-check"/></svg></button>
+        </div>
+        <div class="ev-row" data-type="webinar">
+          <div class="ev-date"><b>04</b><span>DEC</span></div>
+          <div class="ev-info"><span class="ev-tag webinar">WEBINAR</span><h3>AI in je bedrijf: waar het wel en niet helpt</h3><p>19:00 · Online</p></div>
+          <span class="avatar initial" aria-hidden="true">W</span>
+          <button class="btn btn-ghost ev-regbtn" type="button"><span class="lbl">Aanmelden</span><svg class="i go"><use href="#i-arrow-right"/></svg><svg class="i ok"><use href="#i-check"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ev-rep">
+    <div class="wrap">
+      <h2 class="h2 reveal">Waar we het <span class="serif">over</span> hebben</h2>
+      <div class="ev-grid reveal">
+        <button class="ev-card" type="button" data-title="Intake: hoe je vraag vertakt">
+          <div class="ev-thumb" style="--g:linear-gradient(151deg,rgba(110,231,200,.35) 14%,#0c1011 86%)"><span class="ev-num">01</span><span class="ev-len">Intake</span></div>
+          <h3>Intake: hoe je vraag vertakt</h3>
+          <p>Onderdeel 1 van de intake</p>
+        </button>
+        <button class="ev-card" type="button" data-title="Offerte: hoe de prijs ontstaat">
+          <div class="ev-thumb" style="--g:linear-gradient(151deg,rgba(122,215,255,.35) 14%,#0c1011 86%)"><span class="ev-num">02</span><span class="ev-len">Offerte</span></div>
+          <h3>Offerte: hoe de prijs ontstaat</h3>
+          <p>Onderdeel 2 van de intake</p>
+        </button>
+        <button class="ev-card" type="button" data-title="Bouw: van schets naar livegang">
+          <div class="ev-thumb" style="--g:linear-gradient(151deg,rgba(214,150,84,.42) 14%,#0c1011 86%)"><span class="ev-num">03</span><span class="ev-len">Bouw</span></div>
+          <h3>Bouw: van schets naar livegang</h3>
+          <p>Onderdeel 3 van de intake</p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="ev-news-sec">
+    <div class="wrap">
+      <div class="ev-news reveal">
+        <div>
+          <h2>Blijf op de <span class="serif">hoogte</span>.</h2>
+          <p>Eén mail per maand met nieuwe sessies en kennisbank-onderwerpen. Geen ruis.</p>
+        </div>
+        <form class="ev-form" novalidate>
+          <div class="ev-field">
+            <input type="email" placeholder="jij@jouwbedrijf.nl" aria-label="E-mailadres" autocomplete="off">
+            <span class="ev-err">Vul een geldig e-mailadres in, zoals naam@bedrijf.nl</span>
+          </div>
+          <button class="btn btn-primary" type="submit">Aanmelden</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page p-changelog" data-page="changelog">
+  <div class="cl-hero">
+    <p class="eyebrow">Changelog</p>
+    <h1 class="cl-title">Wat is er <span class="serif">nieuw</span>.</h1>
+    <p class="cl-lede">Elke wijziging aan de WeBrnds-site, met datum en toelichting.</p>
+    <div class="cl-actions">
+      <button class="btn btn-ghost" type="button" data-cl="subscribe">Blijf op de hoogte</button>
+      <a class="cl-rss" href="#changelog" data-cl="rss"><svg class="i"><use href="#i-rss"/></svg>RSS</a>
+    </div>
+  </div>
+
+  <div class="cl-timeline">
+    <div class="cl-list">
+
+      <article class="rel active reveal">
+        <div class="rel-meta"><span class="rel-ver">06 nov</span><span class="rel-date">2026</span></div>
+        <div class="rel-rail"><span class="rel-dot"></span></div>
+        <div class="rel-entry"><div class="rel-card">
+          <div class="rel-tags"><span class="tag mint">Nieuw</span><span class="tag amber">Site</span></div>
+          <h2 class="rel-title">Nieuwe site in donkere stijl</h2>
+          <p class="rel-desc">De WeBrnds-site is herbouwd met een rustige donkere basis, één mint accent en vijf werkende pagina's: diensten, prijzen, kennisbank, agenda en changelog.</p>
+          <div class="rel-panel">
+            <p class="panel-label">Wat er in zit</p>
+            <div class="run"><span class="run-dot"></span><span class="run-time">Diensten</span><span class="run-text">Zes diensten met echte vanaf-prijzen</span></div>
+            <div class="run"><span class="run-dot"></span><span class="run-time">Prijzen</span><span class="run-text">Drie pakketten, vergelijkingstabel en vragen</span></div>
+            <div class="run"><span class="run-dot"></span><span class="run-time">Kennisbank</span><span class="run-text">Zes onderwerpen met werkende zoekfunctie</span></div>
+            <div class="run"><span class="run-dot"></span><span class="run-time">Agenda</span><span class="run-text">Sessies met filters, inschrijven en aftellen</span></div>
+          </div>
+          <ul class="bullets">
+            <li><svg class="i"><use href="#i-check"/></svg>Lettertypen en iconen lokaal, geen externe aanroepen</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Volledig bruikbaar op telefoon, tablet en desktop</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Teksten in het Nederlands, zonder opgeschaalde marketing</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="rel reveal">
+        <div class="rel-meta"><span class="rel-ver">04 nov</span><span class="rel-date">2026</span></div>
+        <div class="rel-rail"><span class="rel-dot"></span></div>
+        <div class="rel-entry"><div class="rel-card">
+          <div class="rel-tags"><span class="tag sky">Verbeterd</span></div>
+          <h2 class="rel-title">Alleen de schermafbeeldingen van de site zelf in de repository</h2>
+          <p class="rel-desc">De repository bevat nu uitsluitend de schermafbeeldingen van de site zelf. Klantmateriaal en privémappen blijven buiten de repo.</p>
+          <ul class="bullets">
+            <li><svg class="i"><use href="#i-check"/></svg>Schermafbeeldingen van de eigen site toegevoegd</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Geen klantinhoud in de publieke repository</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="rel reveal">
+        <div class="rel-meta"><span class="rel-ver">04 nov</span><span class="rel-date">2026</span></div>
+        <div class="rel-rail"><span class="rel-dot"></span></div>
+        <div class="rel-entry"><div class="rel-card">
+          <div class="rel-tags"><span class="tag mint">Nieuw</span><span class="tag sky">Navigatie</span></div>
+          <h2 class="rel-title">De figuren in de hero als één compositie</h2>
+          <p class="rel-desc">De figuren staan nu als één samenhangende groep in de hero, met drie verbeteringen aan de navigatie erboven.</p>
+          <ul class="bullets">
+            <li><svg class="i"><use href="#i-check"/></svg>Hero-compositie als één geheel</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Navigatie overzichtelijker gemaakt</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Aanroepen van de beweging versneld</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="rel reveal">
+        <div class="rel-meta"><span class="rel-ver">04 nov</span><span class="rel-date">2026</span></div>
+        <div class="rel-rail"><span class="rel-dot"></span></div>
+        <div class="rel-entry"><div class="rel-card">
+          <div class="rel-tags"><span class="tag amber">Prestatie</span></div>
+          <h2 class="rel-title">Traagere, rustigere beweging en de markering in de kop</h2>
+          <p class="rel-desc">De beweging op de site is vertraagd en stiller gemaakt. De markering in de kop is een markeerstreek geworden in plaats van een vlak.</p>
+          <ul class="bullets">
+            <li><svg class="i"><use href="#i-check"/></svg>Alle beweging vertraagd en verzwakt</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Markering in de kop herschreven</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Lettertypen blijven lokaal geladen</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="rel older" hidden>
+        <div class="rel-meta"><span class="rel-ver">04 nov</span><span class="rel-date">2026</span></div>
+        <div class="rel-rail"><span class="rel-dot"></span></div>
+        <div class="rel-entry"><div class="rel-card">
+          <div class="rel-tags"><span class="tag mint">Nieuw</span></div>
+          <h2 class="rel-title">Overzicht van alle websites</h2>
+          <p class="rel-desc">Een overzicht van alle websites die WeBrnds gebouwd heeft of in beheer heeft, met klikbare links naar de klantsites.</p>
+          <ul class="bullets">
+            <li><svg class="i"><use href="#i-check"/></svg>Overzicht van eigen sites en klantsites</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Elke klantsite in een eigen repository</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="rel older" hidden>
+        <div class="rel-meta"><span class="rel-ver">04 nov</span><span class="rel-date">2026</span></div>
+        <div class="rel-rail"><span class="rel-dot"></span></div>
+        <div class="rel-entry"><div class="rel-card">
+          <div class="rel-tags"><span class="tag red">Fix</span></div>
+          <h2 class="rel-title">Veer-observers robuuster</h2>
+          <p class="rel-desc">Figuren die al voorbijgescrolld waren verschenen soms niet meer. De observers houden nu de positie bij en zetten ze opnieuw alsnog in beeld.</p>
+          <ul class="bullets">
+            <li><svg class="i"><use href="#i-check"/></svg>Figuren komen betrouwbaar in beeld</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Geen flitsen meer bij snel scrollen</li>
+          </ul>
+        </div></div>
+      </article>
+
+      <article class="rel older" hidden>
+        <div class="rel-meta"><span class="rel-ver">04 nov</span><span class="rel-date">2026</span></div>
+        <div class="rel-rail"><span class="rel-dot"></span></div>
+        <div class="rel-entry"><div class="rel-card">
+          <div class="rel-tags"><span class="tag mint">Nieuw</span></div>
+          <h2 class="rel-title">De WeBrnds-site met beweging en prijsconfigurator</h2>
+          <p class="rel-desc">De eerste eigen site: diensten, werkwijze, werk, prijzen en contact, met beweging en een configureerbare prijsopgave.</p>
+          <ul class="bullets">
+            <li><svg class="i"><use href="#i-check"/></svg>Werkwijze in vier stappen</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Prijsconfigurator voor de zes diensten</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Projecten van de eerste klanten</li>
+          </ul>
+        </div></div>
+      </article>
+
+    </div>
+    <button class="btn btn-ghost cl-more" type="button">Laad oudere releases</button>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26 16A10 10 0 1 1 21 7.34" fill="none" stroke="#6ee7c8" stroke-width="2.2" stroke-linecap="round"/><circle cx="24.66" cy="11" r="2.4" fill="#6ee7c8"/></svg>WeBrnds</a>
+        <p>Maatwerksoftware voor het MKB. Websites, webapps, automatisering en AI-integraties, met een vaste prijs.</p>
+        <div class="socials">
+          <a href="mailto:schreuderdarren@gmail.com" aria-label="E-mail WeBrnds"><svg class="i"><use href="#i-mail"/></svg></a>
+          <a href="#home" data-toast="WeBrnds zit in Rozenburg, Zuid-Holland"><svg class="i"><use href="#i-map-pin"/></svg></a>
+          <a href="#home" data-toast="KvK-nummer 42127859"><svg class="i"><use href="#i-shield-check"/></svg></a>
+          <a href="#home" data-toast="Broncode van elke klantsite staat in een eigen repository"><svg class="i"><use href="#i-key"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>DIENSTEN</h4><a href="#home">Websites en webapps</a><a href="#home">Automatisering</a><a href="#home">API-koppelingen</a><a href="#home">AI-integraties</a></div>
+        <div class="footer-col"><h4>BUREAU</h4><a href="#pricing">Prijzen</a><a href="#resources">Kennisbank</a><a href="#events">Agenda</a><a href="#changelog">Changelog</a></div>
+        <div class="footer-col"><h4>CONTACT</h4><a href="mailto:schreuderdarren@gmail.com">schreuderdarren@gmail.com</a><a href="#home">Rozenburg, Zuid-Holland</a><a href="#home">KvK 42127859</a></div>
+        <div class="footer-col"><h4>WERKWIJZE</h4><a href="#home">Vaste prijs vooraf</a><a href="#home">Broncode van de klant</a><a href="#home">Reactie binnen één werkdag</a><a href="#home">Onderhoud vanaf 175 euro per maand</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 WeBrnds · KvK 42127859 · Rozenburg</span><span class="status">Bereikbaar binnen één werkdag</span></div>
+    <div class="wordmark" aria-hidden="true">WeBrnds</div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"><svg class="i"><use href="#i-circle-check"/></svg><span></span></div>
+<script src="assets/js/site.js" defer></script>
