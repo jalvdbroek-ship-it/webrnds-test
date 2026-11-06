@@ -3,6 +3,13 @@
 Een vijf-pagina's site voor WeBrnds (maatwerksoftware voor het MKB) in de
 donkere mint-noir stijl van de Skillry-skill `bs-mint-noir-saas-site`.
 
+## Live
+
+- Repository: https://github.com/jalvdbroek-ship-it/webrnds-test
+- Live: https://jalvdbroek-ship-it.github.io/webrnds-test/
+- Overzicht van alle WeBrnds-websites:
+  [WEBSITES.md](https://github.com/jalvdbroek-ship-it/webrnds-sites/blob/main/WEBSITES.md)
+
 ## Starten
 
 ```
